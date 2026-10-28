@@ -104,14 +104,14 @@ These are excerpts from the production codebase (Python 3.12, MCP Python SDK 2.x
 
 ## Screenshots
 
-![Ingestion console](docs/screenshots/ingestion-console.png)
-*The ingestion console: resumable uploads, per-file ingest modes, the job queue and stage-by-stage progress.*
+![Ingest console](docs/screenshots/ingestion-console-blurred.png)
+*Ingest console: the API key resolves to a tenant, the tenant table shows 373 documents, 10,168 chunks and 14.6M rows in the demo tenant, and selecting a tenant is a request the server can refuse with 403.*
 
-![Copilot answer with scope disclosure](docs/screenshots/copilot-answer-with-disclosure.png)
-*A Copilot Studio answer whose reference states what it was computed over.*
+![Staging](docs/screenshots/ingestion-staging-blurred.png)
+*Staging: 376 files from 60 resumable uploads grouped by type, each with its own ingest mode (document or table), plus per-ingest settings such as the row threshold for embedding versus table mode.*
 
-![Normalisation report](docs/screenshots/normalisation-report.png)
-*Raw name strings against normalised businesses.*
+![Document registry](docs/screenshots/ingestion-documents-blurred.png)
+*Document registry: per-file status, mode, chunk and row counts and ingestion time. Filenames are blurred because they belong to a client.*
 
 ## Author
 
